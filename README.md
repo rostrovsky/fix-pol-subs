@@ -5,8 +5,10 @@ Small script for fixing incorrect UTF-8 encoding in polish subtitles.
 ```bash
 $ python fix-pol.subs.py <input file>
 ```
+After the script run:
+* Input file will be overwritten with the fixed version.
 * Input file backup will be saved with `.old` suffix.
-* Output file will overwrite input file.
+
 
 ## License
 MIT
