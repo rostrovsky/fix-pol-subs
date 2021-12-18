@@ -38,10 +38,12 @@ print(f"saving backup: {backup_abspath}")
 with open(backup_abspath, 'w', encoding='utf-8') as bkp:
     bkp.write(txt)
 
+print("fixing:")
 for k,v in TRANSLATION_MAP.items():
-    print(f"fixing {k} -> {v}")
+    print(f"{k} -> {v}", end=", ")
     txt = txt.replace(k, v)
 
+print("")
 print(f"saving fixed file: {input_abspath}")
 with open(input_abspath, 'w', encoding='utf-8') as out:
     out.write(txt)
